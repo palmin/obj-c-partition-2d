@@ -24,7 +24,9 @@
 #import <assert.h>
 #import "SpacePartitioning.h"
 
-#define ObjectsPerLeaf 8
+#if !__has_feature(objc_arc)
+# error SoapSerialization requires ARC (Automatic Reference Counting)
+#endif
 
 @class SpacePartitioningNode;
 @interface SpacePartitioning ()  {
@@ -40,6 +42,8 @@
 }
 
 @end
+
+#define ObjectsPerLeaf 8
 
 struct SpacePartitioningNode {
     CGPoint upperLeft, lowerRight;
