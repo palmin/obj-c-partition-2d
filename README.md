@@ -3,7 +3,8 @@ obj-c-partition-2d
 
 Two-dimensional space partitioning of Objective C objects allowing fast retrieval in some rectangle or circle.
 
-`// you specify how CGPoint is taken from objects when SpacePartitioning is created.
+```
+// you specify how CGPoint is taken from objects when SpacePartitioning is created.
 SpacePartitioning* space = [SpacePartitioning spacePartitioningWithKeyPath:@"center"
                                                             observeChanges:YES];
                                                             
@@ -21,4 +22,4 @@ SpacePartitioning* space = [SpacePartitioning spacePartitioningWithKeyPath:@"cen
   
 // sometimes we need to remove objects from partitioning 
 [space removeObject: view1];
-`
+```
