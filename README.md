@@ -10,7 +10,7 @@ SpacePartitioning* space = [SpacePartitioning spacePartitioningWithKeyPath:@"cen
                                                             observeChanges:YES];
                                                             
 // Objects added are retained by SpacePartitioning and will update their position
-// if objects emit Key-Value-Observation (KVO) change notifications.
+// if objects emit Key-Value Observing (KVO) change notifications.
 [space addObject: view1];
 [space addObject: view2];
 
