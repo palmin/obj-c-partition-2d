@@ -18,7 +18,7 @@ SpacePartitioning* space = [SpacePartitioning spacePartitioningWithKeyPath:@"cen
 [space enumerateWithinRadius:10 fromPoint:CGPointMake(100,100)
                      toBlock:^(UIView* view) {
                         NSLog(@"%@ has center = %@", view, NSStringFromCGPoint(view.center));
-                        return YES; // keep on iterating
+                        return YES; // keep on enumerating
                      }];
   
 // sometimes we need to remove objects from partitioning 
