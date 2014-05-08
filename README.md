@@ -1,7 +1,7 @@
 obj-c-partition-2d
 ==================
 
-Two-dimensional space partitioning of Objective C objects allowing fast retrieval in some rectangle or circle.
+Two-dimensional space partitioning of Objective C objects allowing fast retrieval in rectangle or circle.
 
 ```
 // you specify how CGPoint is taken from objects when SpacePartitioning is created.
