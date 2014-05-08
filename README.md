@@ -2,6 +2,7 @@ obj-c-partition-2d
 ==================
 
 Two-dimensional space partitioning of Objective C objects allowing fast retrieval in rectangle or circle.
+Requires Automatic Reference Counting (ARC), is helped by Key-Value Observing (KVO) and is MIT licensed.
 
 ```
 // you specify how CGPoint is taken from objects when SpacePartitioning is created.
@@ -13,7 +14,7 @@ SpacePartitioning* space = [SpacePartitioning spacePartitioningWithKeyPath:@"cen
 [space addObject: view1];
 [space addObject: view2];
 
-// We can iterate objects in circle or rectangle
+// enumerate objects in circle (rectangle is also possible)
 [space enumerateWithinRadius:10 fromPoint:CGPointMake(100,100)
                      toBlock:^(UIView* view) {
                         NSLog(@"%@ has center = %@", view, NSStringFromCGPoint(view.center));
