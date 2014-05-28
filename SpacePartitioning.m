@@ -25,7 +25,7 @@
 #import "SpacePartitioning.h"
 
 #if !__has_feature(objc_arc)
-# error SoapSerialization requires ARC (Automatic Reference Counting)
+# error SpacePartitioning requires ARC (Automatic Reference Counting)
 #endif
 
 @class SpacePartitioningNode;
